@@ -1,8 +1,8 @@
 // Подключили переменные
-@import '_variables'
+@import 'variables';
 // Подключили базовые настройки
-@import '_settings'
+@import 'settings';
 //Подключили normalize.css
-@import '_normalize'
+@import '_normalize';
 // Стили для блока header
-@import 'blocks/_header'
+@import 'blocks/header';
