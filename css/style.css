@@ -395,6 +395,11 @@ template {
   text-transform: uppercase;
   color: #fff;
 }
+.header__menu-container {
+  max-width: 1130px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
 
 .logo__img {
   width: 177px;
@@ -450,6 +455,10 @@ template {
   .container {
     max-width: 960px;
   }
+
+  .header__menu-container {
+    max-width: 960px;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -460,33 +469,30 @@ template {
     font-size: 12px;
     line-height: 16px;
   }
-
-  .search-form {
-    margin-left: auto;
+  .header__menu-container {
+    max-width: 90%;
   }
-  .search-form__input {
-    max-width: 340px;
+  .header__search-form {
+    margin-right: auto;
+    margin-left: 45px;
   }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 700px;
-  }
-
   .header__inner {
     padding: 31px 0;
   }
   .header__menu {
     padding: 21px 0;
   }
-
-  .logo__img {
-    max-width: 132px;
+  .header__menu-container {
+    max-width: 673px;
   }
 }
-@media (max-width: 700px) {
+.search-form__input {
+  max-width: 340px;
+}
+
+@media (max-width: 768px) {
   .container {
-    max-width: 600px;
+    max-width: 700px;
   }
 
   .header__search-form {
@@ -506,11 +512,16 @@ template {
     padding: 0;
     margin: 0;
     outline: none;
+    cursor: pointer;
   }
   .header__button-line {
     width: 16px;
     height: 1px;
     background-color: black;
+  }
+
+  .logo__img {
+    max-width: 132px;
   }
 
   .user {
