@@ -10,6 +10,9 @@
     margin-right: auto;
     margin-left: 108px;
   }
+  &__button-menu {
+    display: none;
+  }
   &__menu {
     padding: 31px 0;
     background-color: #0a223d;
@@ -28,7 +31,9 @@
     }
   }
 }
-
+.logo__img {
+  width: 177px;
+}
 .search-form {
   display: flex;
   position: relative;

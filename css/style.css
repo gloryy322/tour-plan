@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -371,6 +375,9 @@ template {
   margin-right: auto;
   margin-left: 108px;
 }
+.header__button-menu {
+  display: none;
+}
 .header__menu {
   padding: 31px 0;
   background-color: #0a223d;
@@ -387,6 +394,10 @@ template {
   line-height: 18px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.logo__img {
+  width: 177px;
 }
 
 .search-form {
@@ -433,6 +444,78 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .header__menu-link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .search-form {
+    margin-left: auto;
+  }
+  .search-form__input {
+    max-width: 340px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .header__inner {
+    padding: 31px 0;
+  }
+  .header__menu {
+    padding: 21px 0;
+  }
+
+  .logo__img {
+    max-width: 132px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .header__search-form {
+    display: none;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__button-menu {
+    width: 16px;
+    height: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+  }
+  .header__button-line {
+    width: 16px;
+    height: 1px;
+    background-color: black;
+  }
+
+  .user {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
