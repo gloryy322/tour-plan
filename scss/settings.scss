@@ -11,6 +11,11 @@
 body {
   font-family: 'Mulish', sans-serif;
   color: $text-color;
+  background-color: $secondary;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
