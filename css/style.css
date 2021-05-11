@@ -616,9 +616,11 @@ template {
   border-radius: 4px;
   background: #ec1f46;
   color: #fff;
+  cursor: pointer;
 }
 .hotel__map {
   width: 347px;
+  height: 210px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -840,12 +842,26 @@ template {
   }
 
   .hotel-slider__button {
-    display: none;
+    width: 12px;
+    height: 12px;
+  }
+  .hotel-slider__button--prev {
+    left: 6px;
+    background-image: url("../img/lowprew.svg");
+  }
+  .hotel-slider__button--next {
+    right: 6px;
+    background-image: url("../img/lownext.svg");
   }
 }
 @media (max-width: 476px) {
   .hotel-slider {
     height: 250px;
+  }
+}
+@media (max-width: 400px) {
+  .hotel-slider {
+    height: 180px;
   }
 }
 

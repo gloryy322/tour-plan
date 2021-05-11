@@ -15,3 +15,12 @@ const hotelSwiper = new Swiper('.hotel-slider', {
     enabled: true,
   },
 });
+
+// ymaps.ready(init);
+// function init() {
+//   var myMap = new ymaps.Map('map', {
+//     center: [7.88823455, 98.2965035],
+//     zoom: 17,
+//     controls: ['zoomControl'],
+//   });
+// }

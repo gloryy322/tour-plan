@@ -162,13 +162,30 @@
   .hotel__content {
     padding: 27px 22px;
   }
-  .hotel-slider__button {
-    display: none;
+  .hotel-slider {
+    &__button {
+      width: 12px;
+      height: 12px;
+      &--prev {
+        left: 6px;
+        background-image: url('../img/lowprew.svg');
+      }
+      &--next {
+        right: 6px;
+        background-image: url('../img/lownext.svg');
+      }
+    }
   }
 }
 
 @media (max-width: 476px) {
   .hotel-slider {
     height: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hotel-slider {
+    height: 180px;
   }
 }
