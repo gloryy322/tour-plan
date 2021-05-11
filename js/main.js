@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
   // If we need pagination
@@ -8,8 +8,8 @@ const swiper = new Swiper('.swiper-container', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider__button--next',
-    prevEl: '.slider__button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
   keyboard: {
     enabled: true,

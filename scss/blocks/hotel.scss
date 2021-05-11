@@ -62,18 +62,108 @@
       font-weight: 600;
     }
   }
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__content {
+    font-family: $nunito;
+    width: 350px;
+    min-height: 210px;
+    background-color: #0a223d;
+    border-radius: 8px;
+    padding: 27px;
+    color: #ffffff;
+    margin-bottom: 27px;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 9px;
+    }
+    &-price {
+      display: flex;
+      flex-direction: column;
+    }
+    &-start {
+      font-family: $nunito;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 14px;
+    }
+    &-dollars {
+      font-family: $nunito;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 33px;
+    }
+    &-room {
+      font-family: $nunito;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &-guest {
+      margin-top: 4px;
+      &-item {
+        margin-bottom: 8px;
+      }
+      &-text {
+        margin-left: 9px;
+      }
+    }
+    &-number {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 17px;
+      &-img {
+        vertical-align: inherit;
+      }
+    }
+    &-quik {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    &-link {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: #ffffff;
+    }
+    &-btn {
+      padding: 13px 0;
+      width: 100%;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      border: none;
+      border-radius: 4px;
+      background: $primary;
+      color: #fff;
+    }
+  }
+  &__map {
+    width: 347px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
 }
 .stars {
   flex-basis: 100%;
   margin-bottom: 4px;
-  &__img {
-  }
 }
-.swiper-container {
-  max-width: 728px;
+.hotel-slider {
+  width: 728px;
   margin: 0;
-  border-radius: 8px;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
   &::after {
     content: '';
     position: absolute;
@@ -86,9 +176,6 @@
     bottom: 0;
     z-index: 10;
   }
-}
-
-.slider {
   &__button {
     width: 30px;
     height: 30px;
@@ -110,5 +197,9 @@
       right: 18px;
       background-image: url('../img/slider-next.svg');
     }
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
   }
 }

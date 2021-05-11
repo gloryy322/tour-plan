@@ -102,23 +102,62 @@
         </div>
         <div class="hotel__grid">
           <!-- Slider main container -->
-          <div class="swiper-container">
+          <div class="swiper-container hotel-slider">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper hotel-slider__wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/Slider1.jpg" alt="" class="swiper__img" />
+              <div class="swiper-slide hotel-slider__slide">
+                <img src="img/Slider1.jpg" alt="" class="hotel-slider__img" />
               </div>
               <div class="swiper-slide">
-                <img src="img/Slider1.jpg" alt="" class="swiper__img" />
+                <img src="img/Slider2.jpg" alt="" class="hotel-slider__img" />
               </div>
               <div class="swiper-slide">
-                <img src="img/Slider1.jpg" alt="" class="swiper__img" />
+                <img src="img/Slider3.jpg" alt="" class="hotel-slider__img" />
               </div>
             </div>
             <!-- If we need navigation buttons -->
-            <button class="slider__button slider__button--prev"></button>
-            <button class="slider__button slider__button--next"></button>
+            <button class="hotel-slider__button hotel-slider__button--prev"></button>
+            <button class="hotel-slider__button hotel-slider__button--next"></button>
+          </div>
+          <div class="hotel__wrapper">
+            <div class="hotel__content">
+              <div class="hotel__content-inner">
+                <div class="hotel__content-price">
+                  <span class="hotel__content-start">price starts as</span>
+                  <strong class="hotel__content-dollars">$ 8,500</strong>
+                  <span class="hotel__content-room">per room / night</span>
+                </div>
+                <div class="hotel__content-guest">
+                  <div class="hotel__content-guest-item">
+                    <img src="img/user.svg" alt="Guest" class="hotel__content-guest-img" />
+                    <span class="hotel__content-guest-text">2 x Guests</span>
+                  </div>
+                  <div class="hotel__content-guest-item">
+                    <img src="img/home.svg" alt="Home" class="hotel__content-guest-img" />
+                    <span class="hotel__content-guest-text">1 x Room</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hotel__content-number">
+                <span class="hotel__content-quik">Quick Booking</span>
+                <a href="tel:12100" class="hotel__content-link">
+                  <img src="img/phone-call.svg" alt="phone-call" class="hotel__content-number-img" />
+                  <span>12100</span>
+                </a>
+              </div>
+              <button class="hotel__content-btn">View Other Options</button>
+            </div>
+            <div class="hotel__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.164338573778!2d100.88256872078632!3d12.934603715719856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310296059bd3779b%3A0x37191e723a1a258!2sHilton%20Pattaya!5e0!3m2!1sru!2sru!4v1620714707671!5m2!1sru!2sru"
+                width="100%"
+                height="210"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>

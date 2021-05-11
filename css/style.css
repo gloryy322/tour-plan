@@ -531,19 +531,111 @@ template {
   font-size: 12px;
   font-weight: 600;
 }
+.hotel__grid {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hotel__content {
+  font-family: "Nunito", sans-serif;
+  width: 350px;
+  min-height: 210px;
+  background-color: #0a223d;
+  border-radius: 8px;
+  padding: 27px;
+  color: #ffffff;
+  margin-bottom: 27px;
+}
+.hotel__content-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.hotel__content-price {
+  display: flex;
+  flex-direction: column;
+}
+.hotel__content-start {
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+.hotel__content-dollars {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+.hotel__content-room {
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+.hotel__content-guest {
+  margin-top: 4px;
+}
+.hotel__content-guest-item {
+  margin-bottom: 8px;
+}
+.hotel__content-guest-text {
+  margin-left: 9px;
+}
+.hotel__content-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.hotel__content-number-img {
+  vertical-align: inherit;
+}
+.hotel__content-quik {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.hotel__content-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.hotel__content-btn {
+  padding: 13px 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border: none;
+  border-radius: 4px;
+  background: #ec1f46;
+  color: #fff;
+}
+.hotel__map {
+  width: 347px;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
 .stars {
   flex-basis: 100%;
   margin-bottom: 4px;
 }
 
-.swiper-container {
-  max-width: 728px;
+.hotel-slider {
+  width: 728px;
   margin: 0;
-  border-radius: 8px;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
-.swiper-container::after {
+.hotel-slider::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -555,8 +647,7 @@ template {
   bottom: 0;
   z-index: 10;
 }
-
-.slider__button {
+.hotel-slider__button {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -570,13 +661,17 @@ template {
   background-position: center;
   background-color: transparent;
 }
-.slider__button--prev {
+.hotel-slider__button--prev {
   left: 18px;
   background-image: url("../img/slider-prev.svg");
 }
-.slider__button--next {
+.hotel-slider__button--next {
   right: 18px;
   background-image: url("../img/slider-next.svg");
+}
+.hotel-slider__img {
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -586,6 +681,13 @@ template {
 
   .header__menu-container {
     max-width: 960px;
+  }
+
+  .hotel-slider {
+    width: 570px;
+  }
+  .hotel-slider__img {
+    height: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -614,14 +716,26 @@ template {
   .logo__img {
     max-width: 132px;
   }
-}
-.search-form__input {
-  max-width: 340px;
-}
 
+  .search-form__input {
+    max-width: 340px;
+  }
+
+  .hotel__grid {
+    flex-direction: column;
+  }
+  .hotel__wrapper {
+    flex-direction: row;
+  }
+
+  .hotel-slider {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 768px) {
   .container {
-    max-width: 700px;
+    max-width: 720px;
   }
 
   .header__inner {
@@ -662,6 +776,37 @@ template {
   .breadcrumb__list {
     margin: 0;
   }
+
+  .hotel__content {
+    width: 340px;
+  }
+  .hotel__map {
+    width: 340px;
+    height: 213px;
+  }
+
+  .hotel-slider {
+    height: 350px;
+  }
+}
+@media (max-width: 710px) {
+  .hotel__wrapper {
+    flex-direction: column;
+  }
+
+  .hotel__content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hotel__map {
+    width: 100%;
+  }
+
+  .hotel-slider {
+    height: 300px;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 576px) {
   .hotel__ratting {
@@ -688,6 +833,19 @@ template {
   .stars {
     flex-basis: auto;
     margin-bottom: 16px;
+  }
+
+  .hotel__content {
+    padding: 27px 22px;
+  }
+
+  .hotel-slider__button {
+    display: none;
+  }
+}
+@media (max-width: 476px) {
+  .hotel-slider {
+    height: 250px;
   }
 }
 
