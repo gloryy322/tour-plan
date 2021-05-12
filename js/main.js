@@ -16,11 +16,13 @@ const hotelSwiper = new Swiper('.hotel-slider', {
   },
 });
 
-// ymaps.ready(init);
-// function init() {
-//   var myMap = new ymaps.Map('map', {
-//     center: [7.88823455, 98.2965035],
-//     zoom: 17,
-//     controls: ['zoomControl'],
-//   });
-// }
+const reviewwSwiper = new Swiper('.rewievs-slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.rewievs-slider__button--prev',
+    prevEl: '.rewievs-slider__button--next',
+  },
+});

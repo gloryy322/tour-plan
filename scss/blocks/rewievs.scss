@@ -1,0 +1,131 @@
+.rewievs {
+  padding: 40px 0 70px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+
+  &__item {
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px auto 0;
+    max-width: 730px;
+
+    padding: 0 62px 30px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 70px;
+      height: 47px;
+      position: absolute;
+      left: 64px;
+      top: 12px;
+      background-image: url('../../img/quote-left.svg');
+    }
+    &::after {
+      content: '';
+      width: 70px;
+      height: 47px;
+      position: absolute;
+      right: 60px;
+      bottom: 113px;
+      background-image: url('../../img/quote-right.svg');
+    }
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -45px;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 9px;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ec1f46;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 4px;
+  }
+
+  &__stars {
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    color: #333333;
+    margin: 0 auto;
+    max-width: 537px;
+  }
+}
+.container {
+}
+.swiper-container {
+}
+.rewievs-slider {
+  &__wrapper {
+  }
+
+  &__slide {
+    position: relative;
+  }
+
+  &__button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  &__button--prev {
+    left: 1px;
+    background-image: url('../img/slider-prev-gray.svg');
+  }
+
+  &__button--next {
+    right: 1px;
+    background-image: url('../img/slider-next-gray.svg');
+  }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.stars {
+  &__img {
+  }
+}

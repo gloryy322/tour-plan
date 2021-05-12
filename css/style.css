@@ -676,6 +676,181 @@ template {
   object-fit: cover;
 }
 
+.subscribe {
+  padding: 98px 0 87px;
+  overflow: hidden;
+  position: relative;
+}
+.subscribe::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(10, 34, 61, 0.8);
+}
+.subscribe__inner {
+  position: relative;
+  max-width: 731px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.subscribe__subtitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.subscribe__search {
+  width: 350px;
+  height: 55px;
+  position: relative;
+  border-radius: 4px;
+  border: none;
+  overflow: hidden;
+}
+.subscribe__input {
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+  padding: 0;
+  padding-left: 33px;
+  padding-right: 75px;
+  border: none;
+  outline: none;
+}
+.subscribe__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 18px;
+  border: none;
+  background-color: #ec1f46;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.rewievs {
+  padding: 40px 0 70px;
+}
+.rewievs__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+.rewievs__item {
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 45px auto 0;
+  max-width: 730px;
+  padding: 0 62px 30px;
+  position: relative;
+}
+.rewievs__item::before {
+  content: '';
+  width: 70px;
+  height: 47px;
+  position: absolute;
+  left: 64px;
+  top: 12px;
+  background-image: url("../../img/quote-left.svg");
+}
+.rewievs__item::after {
+  content: '';
+  width: 70px;
+  height: 47px;
+  position: absolute;
+  right: 60px;
+  bottom: 113px;
+  background-image: url("../../img/quote-right.svg");
+}
+.rewievs__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
+.rewievs__img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 9px;
+}
+.rewievs__name {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ec1f46;
+  margin-bottom: 10px;
+}
+.rewievs__date {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  margin-bottom: 4px;
+}
+.rewievs__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  color: #333333;
+  margin: 0 auto;
+  max-width: 537px;
+}
+
+.rewievs-slider__slide {
+  position: relative;
+}
+.rewievs-slider__button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+.rewievs-slider__button--prev {
+  left: 1px;
+  background-image: url("../img/slider-prev-gray.svg");
+}
+.rewievs-slider__button--next {
+  right: 1px;
+  background-image: url("../img/slider-next-gray.svg");
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -690,6 +865,13 @@ template {
   }
   .hotel-slider__img {
     height: 100%;
+  }
+
+  .subscribe {
+    background-image: url("../../img/subbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 center;
   }
 }
 @media (max-width: 992px) {
@@ -730,13 +912,24 @@ template {
     flex-direction: row;
   }
 
+  .rewievs__item {
+    max-width: 580px;
+  }
+  .rewievs__item::before, .rewievs__item::after {
+    display: none;
+  }
+  .rewievs__text {
+    max-width: 455px;
+  }
+
   .hotel-slider {
     width: 100%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
-  .container {
+  .container,
+  .subscribe__inner {
     max-width: 720px;
   }
 
@@ -790,6 +983,10 @@ template {
   .hotel-slider {
     height: 350px;
   }
+
+  .subscribe__inner {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 710px) {
   .hotel__wrapper {
@@ -808,6 +1005,15 @@ template {
   .hotel-slider {
     height: 300px;
     margin-bottom: 20px;
+  }
+
+  .subscribe__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subscribe__title {
+    margin-bottom: 37px;
   }
 }
 @media (max-width: 576px) {
@@ -853,6 +1059,36 @@ template {
     right: 6px;
     background-image: url("../img/lownext.svg");
   }
+
+  .subscribe {
+    padding: 76px 0 83px;
+  }
+  .subscribe__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .subscribe__subtitle {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe__search {
+    width: 100%;
+  }
+
+  .rewievs-slider__button {
+    top: 45px;
+  }
+
+  .rewievs__item {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .rewievs__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
 }
 @media (max-width: 476px) {
   .hotel-slider {
@@ -862,6 +1098,14 @@ template {
 @media (max-width: 400px) {
   .hotel-slider {
     height: 180px;
+  }
+
+  .rewievs-slider__button--next {
+    right: 55px;
+  }
+
+  .rewievs-slider__button--prev {
+    left: 55px;
   }
 }
 

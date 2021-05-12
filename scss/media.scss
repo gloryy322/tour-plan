@@ -11,6 +11,12 @@
       height: 100%;
     }
   }
+  .subscribe {
+    background-image: url('../../img/subbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+  }
 }
 
 @media (max-width: 992px) {
@@ -52,6 +58,18 @@
       flex-direction: row;
     }
   }
+  .rewievs {
+    &__item {
+      max-width: 580px;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    &__text {
+      max-width: 455px;
+    }
+  }
 
   .hotel-slider {
     width: 100%;
@@ -60,7 +78,8 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container,
+  .subscribe__inner {
     max-width: 720px;
   }
   .header {
@@ -113,6 +132,9 @@
   .hotel-slider {
     height: 350px;
   }
+  .subscribe__inner {
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 710px) {
@@ -129,6 +151,13 @@
   .hotel-slider {
     height: 300px;
     margin-bottom: 20px;
+  }
+  .subscribe__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .subscribe__title {
+    margin-bottom: 37px;
   }
 }
 
@@ -176,6 +205,34 @@
       }
     }
   }
+  .subscribe {
+    padding: 76px 0 83px;
+    &__title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__subtitle {
+      font-size: 30px;
+      line-height: 38px;
+    }
+    &__search {
+      width: 100%;
+    }
+  }
+  .rewievs-slider {
+    &__button {
+      top: 45px;
+    }
+  }
+  .rewievs__item {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .rewievs__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
 }
 
 @media (max-width: 476px) {
@@ -187,5 +244,12 @@
 @media (max-width: 400px) {
   .hotel-slider {
     height: 180px;
+  }
+
+  .rewievs-slider__button--next {
+    right: 55px;
+  }
+  .rewievs-slider__button--prev {
+    left: 55px;
   }
 }
