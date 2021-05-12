@@ -9,6 +9,7 @@
 }
 
 body {
+  width: 100%;
   font-family: 'Mulish', sans-serif;
   color: #333333;
   background-color: #f5fafe;
@@ -678,7 +679,6 @@ template {
 
 .subscribe {
   padding: 98px 0 87px;
-  overflow: hidden;
   position: relative;
 }
 .subscribe::before {
@@ -693,7 +693,7 @@ template {
 .subscribe__inner {
   position: relative;
   max-width: 731px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -728,7 +728,6 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  color: #bdbdbd;
   padding: 0;
   padding-left: 33px;
   padding-right: 75px;
@@ -747,6 +746,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .rewievs {
@@ -822,6 +822,7 @@ template {
   line-height: 160%;
   color: #333333;
   margin: 0 auto;
+  text-align: justify;
   max-width: 537px;
 }
 
@@ -865,13 +866,6 @@ template {
   }
   .hotel-slider__img {
     height: 100%;
-  }
-
-  .subscribe {
-    background-image: url("../../img/subbg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 center;
   }
 }
 @media (max-width: 992px) {
@@ -917,6 +911,10 @@ template {
   }
   .rewievs__item::before, .rewievs__item::after {
     display: none;
+  }
+  .rewievs__title {
+    font-size: 30px;
+    line-height: 38px;
   }
   .rewievs__text {
     max-width: 455px;
@@ -986,6 +984,10 @@ template {
 
   .subscribe__inner {
     padding: 0 10px;
+  }
+
+  .subscribe {
+    width: 100%;
   }
 }
 @media (max-width: 710px) {
@@ -1088,6 +1090,10 @@ template {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 42px;
+  }
+
+  .rewievs__text {
+    text-align: left;
   }
 }
 @media (max-width: 476px) {

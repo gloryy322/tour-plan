@@ -22,7 +22,7 @@ const reviewwSwiper = new Swiper('.rewievs-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.rewievs-slider__button--prev',
-    prevEl: '.rewievs-slider__button--next',
+    nextEl: '.rewievs-slider__button--next',
+    prevEl: '.rewievs-slider__button--prev',
   },
 });

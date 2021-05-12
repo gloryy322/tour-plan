@@ -72,15 +72,13 @@
     margin-bottom: 4px;
   }
 
-  &__stars {
-  }
-
   &__text {
     font-weight: normal;
     font-size: 12px;
     line-height: 160%;
     color: #333333;
     margin: 0 auto;
+    text-align: justify;
     max-width: 537px;
   }
 }
