@@ -18,7 +18,6 @@
     align-items: center;
     margin: 45px auto 0;
     max-width: 730px;
-
     padding: 0 62px 30px;
     position: relative;
     &::before {
@@ -28,7 +27,7 @@
       position: absolute;
       left: 64px;
       top: 12px;
-      background-image: url('../../img/quote-left.svg');
+      background-image: url('../img/quote-left.svg');
     }
     &::after {
       content: '';
@@ -37,7 +36,7 @@
       position: absolute;
       right: 60px;
       bottom: 113px;
-      background-image: url('../../img/quote-right.svg');
+      background-image: url('../img/quote-right.svg');
     }
   }
 
@@ -82,10 +81,7 @@
     max-width: 537px;
   }
 }
-.container {
-}
-.swiper-container {
-}
+
 .rewievs-slider {
   &__wrapper {
   }
@@ -117,13 +113,5 @@
   &__button--next {
     right: 1px;
     background-image: url('../img/slider-next-gray.svg');
-  }
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.stars {
-  &__img {
   }
 }
