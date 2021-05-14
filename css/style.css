@@ -824,6 +824,10 @@ template {
   margin-bottom: 24px;
 }
 
+.packages-card1 {
+  grid-area: card1;
+}
+
 .packages-card2 {
   grid-area: card2;
 }
