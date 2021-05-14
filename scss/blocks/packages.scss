@@ -62,9 +62,6 @@
     width: 50%;
   }
 
-  &__stars {
-  }
-
   &__hotel {
     font-weight: bold;
     font-size: 18px;
@@ -173,17 +170,6 @@
   &__guest-room {
     margin-bottom: 24px;
   }
-}
-.container {
-}
-.packages-card1 {
-  grid-area: card1;
-}
-.offer {
-}
-.stars {
-}
-.star {
 }
 .packages-card2 {
   grid-area: card2;
