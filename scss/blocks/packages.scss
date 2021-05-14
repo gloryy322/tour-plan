@@ -1,0 +1,199 @@
+.packages {
+  padding: 42px 0 69px 0;
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 64px 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+      'card1 card1 card2'
+      'card3 card4 card5';
+  }
+
+  &__card {
+    background: #0a223d;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    // max-width: 730px;
+    max-height: 500px;
+    display: flex;
+    position: relative;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+  }
+
+  &__offer {
+    position: absolute;
+    min-width: 60px;
+    top: 26px;
+    left: 0;
+    font-size: 8px;
+    line-height: 10px;
+    padding: 4px 9px;
+    background-color: $primary;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  &__offer-first {
+    min-width: 95px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 8px 12px 7px 12px;
+  }
+
+  &__container {
+    padding: 39px 21px 30px 43px;
+    width: 50%;
+  }
+
+  &__stars {
+  }
+
+  &__hotel {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 27px 0;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 160.6%;
+    margin: 0 0 45px 0;
+  }
+
+  &__guest {
+    margin-bottom: 37px;
+  }
+
+  &__item {
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    min-width: 14px;
+    height: 14px;
+    margin-right: 15px;
+    padding-left: 3px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 3px;
+  }
+
+  &__sale {
+    flex-basis: 100%;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    margin-bottom: 5px;
+  }
+
+  &__pricetag {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__button {
+    padding: 11px 26px;
+    border-radius: 4px;
+    border: none;
+    background-color: $primary;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    margin-top: -5px;
+  }
+
+  &__card-secondary {
+    // max-width: 350px;
+    background: #0a223d;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    margin-bottom: -9px;
+  }
+
+  &__container-secondary {
+    padding: 35px 21px 23px 30px;
+  }
+
+  &__hotel-name2 {
+    margin: 0 0 36px 0;
+    padding-left: 2px;
+  }
+
+  &__guest-room2 {
+    margin-bottom: 12px;
+  }
+
+  &__hotel-name {
+    margin: 0 0 23px 0;
+    padding-left: 3px;
+  }
+
+  &__guest-room {
+    margin-bottom: 24px;
+  }
+}
+.container {
+}
+.packages-card1 {
+  grid-area: card1;
+}
+.offer {
+}
+.stars {
+}
+.star {
+}
+.packages-card2 {
+  grid-area: card2;
+}
+.packages-card3 {
+  grid-area: card3;
+}
+.packages-card4 {
+  grid-area: card4;
+}
+.packages-card5 {
+  grid-area: card5;
+}
