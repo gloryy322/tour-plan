@@ -16,31 +16,46 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header__mobile--fixed">
       <div class="container">
         <div class="header__inner">
           <a href="#" class="logo">
             <img src="img/Логотип.svg" alt="Logo :Best Tour Plan" class="logo__img" />
           </a>
-          <form action="#" class="search-form header__search-form">
+          <form action="#" class="search-form header__search-form header__search-form--hidden">
             <input type="text" class="search-form__input" placeholder="Search Location" />
             <button class="search-form__btn">
               <img src="img/search.svg" alt="button:search" class="search-form__img" />
             </button>
           </form>
-          <a href="#" class="user">
+          <a href="#" class="user user--hidden">
             <img src="img/1f52f742a54e854985e031616bd0b26f.jpg" alt="Photo user" class="user__img" />
             <span class="user__name">Nathan</span>
           </a>
           <button class="header__button-menu">
-            <span class="header__button-line"></span>
-            <span class="header__button-line"></span>
-            <span class="header__button-line"></span>
+            <span class="header__button-line header__button-line--top"></span>
+            <span class="header__button-line header__button-line--center"></span>
+            <span class="header__button-line header__button-line--bottom"></span>
           </button>
         </div>
       </div>
       <nav class="header__menu">
         <ul class="header__menu-list header__menu-container">
+          <li class="header__menu-item  header__menu-item--hidden">
+            <a href="#" class="user">
+            <img src="img/1f52f742a54e854985e031616bd0b26f.jpg" alt="Photo user" class="user__img" />
+            <span class="user__name">Nathan</span>
+          </a>
+          </li>
+          <li class="header__menu-item header__menu-item--hidden">
+            <form action="#" class="search-form header__search-form">
+            <input type="text" class="search-form__input" placeholder="Search Location" />
+            <button class="search-form__btn">
+              <img src="img/search.svg" alt="button:search" class="search-form__img" />
+            </button>
+          </form>
+          </a>
+          </li>
           <li class="header__menu-item">
             <a href="#" class="header__menu-link">All Deals</a>
           </li>
@@ -174,16 +189,11 @@
             <div class="package__info package__info--main">
               <div class="package__rating-title">
                 <div class="stars package__stars">
-                  <img class="stars__star" src="img/Star.svg" alt="star" /><img
-                    class="stars__star"
-                    src="img/star.svg"
-                    alt="star"
-                  /><img class="stars__star" src="img/Star.svg" data-src="img/star.svg" alt="star" /><img
-                    class="stars__star"
-                    src="img/Star.svg"
-                    data-src="img/star.svg"
-                    alt="star"
-                  /><img class="stars__star" src="img/Star.svg" data-src="img/star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="" class="stars__img" />
+                  <img src="img/Star.svg" alt="" class="stars__img" />
+                  <img src="img/Star.svg" alt="" class="stars__img" />
+                  <img src="img/Star.svg" alt="" class="stars__img" />
+                  <img src="img/Star.svg" alt="" class="stars__img" />
                 </div>
                 <!-- /.package__rating -->
                 <h3 class="package__title package__title--main">Hotel Blue Haven</h3>

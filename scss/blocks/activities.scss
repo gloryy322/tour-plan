@@ -34,6 +34,9 @@
       background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%);
       z-index: -1;
     }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__img {
