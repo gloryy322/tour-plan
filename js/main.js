@@ -32,5 +32,6 @@ let headerMenu = document.querySelector('.header__menu');
 
 menuButton.addEventListener('click', function () {
   headerMenu.classList.toggle('header__menu--visible');
+  menuButton.classList.toggle('active');
   console.log('Клик по кнопке');
 });

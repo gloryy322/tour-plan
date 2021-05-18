@@ -217,11 +217,12 @@
       }
     }
     &__button-menu {
+      position: relative;
       width: 16px;
       height: 11px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
       background-color: #fff;
       border: none;
       padding: 0;
@@ -230,10 +231,42 @@
       cursor: pointer;
     }
     &__button-line {
-      width: 16px;
+      position: relative;
+      width: 100%;
       height: 1px;
       background-color: black;
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: black;
+      }
+      &::before {
+        top: -6px;
+        display: block;
+        transition: all 0.3s;
+      }
+      &::after {
+        bottom: -6px;
+        display: block;
+        transition: all 0.3s;
+      }
     }
+  }
+  .active .header__button-line {
+    background-color: transparent;
+  }
+  .active .header__button-line::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: all 0.3s;
+  }
+  .active .header__button-line::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: all 0.3s;
   }
   .user {
     flex-direction: column;
