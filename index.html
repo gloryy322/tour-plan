@@ -39,20 +39,19 @@
       </div>
       <nav class="header__menu">
         <ul class="header__menu-list header__menu-container">
-          <li class="header__menu-item  header__menu-item--hidden">
+          <li class="header__menu-item header__menu-item--hidden">
             <a href="#" class="user">
-            <img src="img/1f52f742a54e854985e031616bd0b26f.jpg" alt="Photo user" class="user__img" />
-            <span class="user__name">Nathan</span>
-          </a>
+              <img src="img/1f52f742a54e854985e031616bd0b26f.jpg" alt="Photo user" class="user__img" />
+              <span class="user__name">Nathan</span>
+            </a>
           </li>
           <li class="header__menu-item header__menu-item--hidden">
             <form action="#" class="search-form header__search-form">
-            <input type="text" class="search-form__input" placeholder="Search Location" />
-            <button class="search-form__btn">
-              <img src="img/search.svg" alt="button:search" class="search-form__img" />
-            </button>
-          </form>
-          </a>
+              <input type="text" class="search-form__input" placeholder="Search Location" />
+              <button class="search-form__btn">
+                <img src="img/search.svg" alt="button:search" class="search-form__img" />
+              </button>
+            </form>
           </li>
           <li class="header__menu-item">
             <a href="#" class="header__menu-link">All Deals</a>
@@ -378,9 +377,9 @@
             subscribe to our
             <span class="subscribe__subtitle">Newsletter</span>
           </h2>
-          <form action="#" class="subscribe__search">
-            <input type="text" class="subscribe__input" placeholder="Your email address" />
-            <button class="subscribe__btn">Send</button>
+          <form action="send.php" method="POST" class="subscribe__search">
+            <input type="text" class="subscribe__input" placeholder="Your email address" name="email" />
+            <button type="submit" class="subscribe__btn">Send</button>
           </form>
         </div>
       </div>
@@ -479,9 +478,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <a href="index.html" class="logo footer__logo"
-            ><img
-              src="img/best-tour-plan.svg"
-              alt="Logo: Best Tour Plan"
+            ><img src="img/best-tour-plan.svg" alt="Logo: Best Tour Plan"
           /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -540,23 +537,9 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
-                ><img
-                  src="img/fb.svg"
-                 
-                  alt="Icon: facebook"
-              /></a>
-              <a href="#" class="footer__link"
-                ><img
-                  src="img/yt.svg"
-
-                  alt="Icon: youtube"
-              /></a>
-              <a href="#" class="footer__link"
-                ><img
-                  src="img/inst.svg"
-                  alt="Icon: instagram"
-              /></a>
+              <a href="#" class="footer__link"><img src="img/fb.svg" alt="Icon: facebook" /></a>
+              <a href="#" class="footer__link"><img src="img/yt.svg" alt="Icon: youtube" /></a>
+              <a href="#" class="footer__link"><img src="img/inst.svg" alt="Icon: instagram" /></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
@@ -585,21 +568,13 @@
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img
-                    class="footer__icon"
-                    src="img/map.svg"
-                    alt="Icon: map"
-                  />
+                  <img class="footer__icon" src="img/map.svg" alt="Icon: map" />
                 </div>
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img
-                    class="footer__icon"
-                    src="img/phone.svg"
-                    alt="Icon: phone call"
-                  />
+                  <img class="footer__icon" src="img/phone.svg" alt="Icon: phone call" />
                 </div>
                 <div class="footer__tel">
                   <span>
@@ -620,11 +595,7 @@
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img
-                    class="footer__icon"
-                    src="img/mail.svg"
-                    alt="Icon: email"
-                  />
+                  <img class="footer__icon" src="img/mail.svg" alt="Icon: email" />
                 </div>
                 <a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
               </li>
@@ -633,25 +604,16 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="#" method="POST" class="form footer__form">
+            <form action="send.php" method="POST" class="form footer__form">
               <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                />
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" />
               </div>
               <!-- /.footer__input-group -->
               <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input"
-                  placeholder="Phone Number*"
-
-                />
+                <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" />
               </div>
               <!-- /.footer__input-group -->
-              <textarea class="message footer__message" placeholder="Message" ></textarea>
+              <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
@@ -673,9 +635,10 @@
           </ul>
           <!-- /.footer__responsibility -->
           <div class="footer__pay">
-            <img src="img/partners.png" alt="" class="footer__pay-img">
+            <img src="img/partners.png" alt="" class="footer__pay-img" />
+          </div>
+          <!-- /.footer-other -->
         </div>
-        <!-- /.footer-other -->
       </div>
       <!-- /.container -->
     </footer>
