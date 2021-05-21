@@ -173,6 +173,10 @@
       margin-bottom: 20px;
     }
   }
+  .modal__content {
+    width: 400px;
+    padding: 30px 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -483,6 +487,18 @@
   .subscribe__title {
     margin-bottom: 37px;
   }
+  .modal__content {
+    width: 300px;
+    padding: 30px 20px;
+    overflow: scroll;
+  }
+  .modal__button {
+    min-width: 100px;
+  }
+  .modal__message {
+    width: 100%;
+    min-height: 80px;
+  }
 }
 @media (max-width: 678px) {
   .header {
@@ -602,6 +618,10 @@
     &__item {
       margin-bottom: 10px;
     }
+  }
+  .modal__content {
+    width: 96%;
+    padding: 30px 10px;
   }
 }
 

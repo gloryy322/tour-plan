@@ -35,3 +35,35 @@ menuButton.addEventListener('click', function () {
   menuButton.classList.toggle('active');
   console.log('Клик по кнопке');
 });
+
+let modalButton = document.querySelectorAll('[data-toggle="modal"]');
+let modalOverlay = document.querySelector('.modal__overlay');
+let modalContent = document.querySelector('.modal__content');
+
+modalButton.forEach(function (item) {
+  item.addEventListener('click', function () {
+    modalOverlay.classList.add('modal__overlay--visible');
+    modalContent.classList.add('modal__content--visible');
+    if (modalOverlay.classList.contains('modal__overlay--visible')) {
+      bodyContent.classList.add('modal-open');
+    }
+  });
+});
+
+let closeModalButton = document.querySelector('.modal__btn');
+
+closeModalButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalOverlay.classList.remove('modal__overlay--visible');
+  modalContent.classList.remove('modal__content--visible');
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalContent.classList.contains('modal__content--visible')) {
+      evt.preventDefault();
+      modalContent.classList.remove('modal__content--visible');
+      modalOverlay.classList.remove('modal__overlay--visible');
+    }
+  }
+});
