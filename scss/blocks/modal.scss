@@ -25,7 +25,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 120;
+    z-index: 140;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s linear;
@@ -39,6 +39,8 @@
     position: absolute;
     top: 17px;
     right: 17px;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   &__inner {
@@ -63,7 +65,7 @@
 
   &__input-group {
     width: 100%;
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   &__input {
@@ -72,10 +74,11 @@
   &__message {
     width: 100%;
     min-height: 123px;
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   &__button {
+    margin-top: 15px;
     min-width: 160px;
     min-height: 50px;
   }
