@@ -13,22 +13,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header header__mobile--fixed">
       <div class="container">
         <div class="header__inner">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right" data-aos-duration="100">
             <img src="img/Логотип.svg" alt="Logo :Best Tour Plan" class="logo__img" />
           </a>
-          <form action="#" class="search-form header__search-form header__search-form--hidden">
+          <form
+            action="#"
+            class="search-form header__search-form header__search-form--hidden"
+            data-aos="fade-right"
+            data-aos-duration="200"
+          >
             <input type="text" class="search-form__input" placeholder="Search Location" />
             <button class="search-form__btn">
               <img src="img/search.svg" alt="button:search" class="search-form__img" />
             </button>
           </form>
-          <a href="#" class="user user--hidden">
+          <a href="#" class="user user--hidden" data-aos="fade-right" data-aos-duration="400">
             <img src="img/1f52f742a54e854985e031616bd0b26f.jpg" alt="Photo user" class="user__img" />
             <span class="user__name">Nathan</span>
           </a>
@@ -38,7 +44,7 @@
         </div>
       </div>
       <nav class="header__menu">
-        <ul class="header__menu-list header__menu-container">
+        <ul class="header__menu-list header__menu-container" data-aos="fade-down" data-aos-duration="400">
           <li class="header__menu-item header__menu-item--hidden">
             <a href="#" class="user">
               <img src="img/1f52f742a54e854985e031616bd0b26f.jpg" alt="Photo user" class="user__img" />
@@ -114,7 +120,12 @@
         </div>
         <div class="hotel__grid">
           <!-- Slider main container -->
-          <div class="swiper-container hotel-slider">
+          <div
+            class="swiper-container hotel-slider"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper hotel-slider__wrapper">
               <!-- Slides -->
@@ -132,7 +143,13 @@
             <button class="hotel-slider__button hotel-slider__button--prev"></button>
             <button class="hotel-slider__button hotel-slider__button--next"></button>
           </div>
-          <div class="hotel__wrapper">
+          <div
+            class="hotel__wrapper"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
             <div class="hotel__content">
               <div class="hotel__content-inner">
                 <div class="hotel__content-price">
@@ -178,7 +195,12 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-grid">
-          <div class="package package--main">
+          <div
+            class="package package--main"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500"
+          >
             <div class="package__container package__container--main">
               <img class="package__image package__image--main" src="img/card--big.jpeg" alt="Hotel Blue Haven" />
               <span class="package__offer package__offer--main">Flash Offer</span>
@@ -232,7 +254,7 @@
             <!-- /.package__info -->
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <div class="package__container">
               <img class="package__image" src="img/card1.jpeg" alt="LUX* Belle Mare" />
               <span class="package__offer">Flash Offer</span>
@@ -265,7 +287,7 @@
             <!-- /.package__info -->
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <div class="package__container">
               <img class="package__image" src="img/card2.jpeg" alt="White Palace" />
               <span class="package__offer">Flash Offer</span>
@@ -298,7 +320,7 @@
             <!-- /.package__info -->
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             <div class="package__container">
               <img class="package__image" src="img/card3.jpeg" alt="Luxury Place" />
               <span class="package__offer">Flash Offer</span>
@@ -331,7 +353,7 @@
             <!-- /.package__info -->
           </div>
           <!-- /.package -->
-          <div class="package">
+          <div class="package" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <div class="package__container">
               <img class="package__image" src="img/card4.jpeg" alt="Hotel Five Star" />
               <span class="package__offer">Flash Offer</span>
@@ -373,12 +395,19 @@
     <section class="subscribe" data-parallax="scroll" data-speed="0.3" data-image-src="./img/parallax.jpg">
       <div class="container">
         <div class="subscribe__inner">
-          <h2 class="subscribe__title">
+          <h2 class="subscribe__title" data-aos="fade-right">
             subscribe to our
             <span class="subscribe__subtitle">Newsletter</span>
           </h2>
-          <form action="send.php" method="POST" class="subscribe__search">
-            <input type="text" class="subscribe__input" placeholder="Your email address" name="email" />
+          <form action="send.php" method="POST" class="subscribe__search form__validate" data-aos="fade-left">
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              minlength="2"
+              required
+            />
             <button type="submit" class="subscribe__btn">Send</button>
           </form>
         </div>
@@ -386,9 +415,9 @@
     </section>
     <section class="rewievs">
       <div class="container">
-        <h2 class="rewievs__title">What people think about&nbsp;us</h2>
+        <h2 class="rewievs__title" data-aos="zoom-out-left">What people think about&nbsp;us</h2>
         <!-- Slider main container -->
-        <div class="swiper-container rewievs-slider">
+        <div class="swiper-container rewievs-slider" data-aos="zoom-out-left">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper rewievs-slider__wrapper">
             <!-- Slides -->
@@ -451,22 +480,22 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities__inner">
-          <div class="activities__item">
+          <div class="activities__item" data-aos="fade-down-right">
             <img src="img/activ1.jpeg" alt="The curious corner of chamarel" class="activities__img" />
             <h3 class="activities__item-title">The curious corner of chamarel</h3>
             <button class="activities__btn" data-toggle="modal">Book Now</button>
           </div>
-          <div class="activities__item">
+          <div class="activities__item" data-aos="fade-down-right">
             <img src="img/activ2.jpeg" alt="The curious corner of chamarel" class="activities__img" />
             <h3 class="activities__item-title">Gymkhana club golf course</h3>
             <button class="activities__btn" data-toggle="modal">Book Now</button>
           </div>
-          <div class="activities__item">
+          <div class="activities__item" data-aos="fade-down-right">
             <img src="img/activ3.jpeg" alt="The curious corner of chamarel" class="activities__img" />
             <h3 class="activities__item-title">Tamarind falls hiking trip - full day</h3>
             <button class="activities__btn" data-toggle="modal">Book Now</button>
           </div>
-          <div class="activities__item">
+          <div class="activities__item" data-aos="fade-down-right">
             <img src="img/activ4.jpeg" alt="The curious corner of chamarel" class="activities__img" />
             <h3 class="activities__item-title">The blue marine discovery quest</h3>
             <button class="activities__btn" data-toggle="modal">Book Now</button>
@@ -477,10 +506,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="index.html" class="logo footer__logo"
+          <a href="index.html" class="logo footer__logo" data-aos="zoom-in"
             ><img src="img/best-tour-plan.svg" alt="Logo: Best Tour Plan"
           /></a>
-          <div class="footer__list footer__categories">
+          <div class="footer__list footer__categories" data-aos="zoom-in">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -510,7 +539,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__list footer__additional">
+          <div class="footer__list footer__additional" data-aos="zoom-in">
             <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -534,7 +563,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__social-network">
+          <div class="footer__social-network" data-aos="zoom-in">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"><img src="img/fb.svg" alt="Icon: facebook" /></a>
@@ -544,7 +573,7 @@
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
+          <div class="footer__list footer__legal" data-aos="zoom-in">
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -562,7 +591,12 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div
+            class="footer__contact-details"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
             <ul class="footer__ul">
@@ -602,7 +636,13 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div
+            class="footer__contact-form"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form form__validate">
               <div class="footer__input-group">
@@ -694,6 +734,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

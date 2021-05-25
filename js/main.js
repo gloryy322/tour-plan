@@ -28,15 +28,16 @@ $(document).ready(function () {
     },
   });
 
+  // Мобильное меню
   let menuButton = document.querySelector('.header__button-menu');
   let headerMenu = document.querySelector('.header__menu');
 
   menuButton.addEventListener('click', function () {
     headerMenu.classList.toggle('header__menu--visible');
     menuButton.classList.toggle('active');
-    console.log('Клик по кнопке');
   });
 
+  // Модальные окна
   let modalButton = document.querySelectorAll('[data-toggle="modal"]');
   let modalOverlay = document.querySelector('.modal__overlay');
   let modalContent = document.querySelector('.modal__content');
@@ -45,9 +46,6 @@ $(document).ready(function () {
     item.addEventListener('click', function () {
       modalOverlay.classList.add('modal__overlay--visible');
       modalContent.classList.add('modal__content--visible');
-      if (modalOverlay.classList.contains('modal__overlay--visible')) {
-        bodyContent.classList.add('modal-open');
-      }
     });
   });
 
@@ -85,7 +83,13 @@ $(document).ready(function () {
           required: 'Please specify your phone',
         },
       },
+      rules: {
+        phone: {
+          minlength: 17,
+        },
+      },
     });
   });
   $('[name="phone"]').mask('+7(000)-000-00-00');
+  AOS.init();
 });
